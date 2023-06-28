@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+/* Estilos de Nav */
+nav p{ /*Se le da un selector*/
+    font-family: 'Pirata One', cursive;
+    font-size: 4em;
+    letter-spacing: 5px;  /*Esto le da espacio a las letras*/
+    color: #000000;
+    text-align: center;
+    text-shadow: 5px -5px 2px #bcbdac; /* Esto es para darle un Sombreado 1.(-)izq-(+)der 2.ariba-abajo 3.intensidad */
+}
+li{
+    background:linear-gradient(#ff8830, #bcbdac);
+    color: #000000;
+    list-style: none; /* Esto le da estilos a los puntitos de las listas, con el None se le quitan los puntos */
+    width: 200px; /* Esto le da espacios a las listas */
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border: solid 3px #000000  ; /* le da un bordea las list tipo, grosor, color*/
+    border-radius: 30px; /* Le quita las puntas al borde */ /*#ff8830 color naranja*/
+}
