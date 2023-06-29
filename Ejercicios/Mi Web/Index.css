@@ -8,14 +8,44 @@ nav p{ /*Se le da un selector*/
     text-align: center;
     text-shadow: 5px -5px 2px #bcbdac; /* Esto es para darle un Sombreado 1.(-)izq-(+)der 2.ariba-abajo 3.intensidad */
 }
+/* Estilos para Li*/
 li{
-    background:linear-gradient(#ff8830, #bcbdac);
+    background:linear-gradient(#ff8830, #bcbdac); /*Esto es para darle un color de fondo combinado de dos colores */
     color: #000000;
     list-style: none; /* Esto le da estilos a los puntitos de las listas, con el None se le quitan los puntos */
     width: 200px; /* Esto le da espacios a las listas */
     margin-bottom: 20px;
+    margin-right: 20px;
     padding: 20px;
     text-align: center;
     border: solid 3px #000000  ; /* le da un bordea las list tipo, grosor, color*/
     border-radius: 30px; /* Le quita las puntas al borde */ /*#ff8830 color naranja*/
+}
+li:hover{ /* Hover es para cuando se pasa el mouse sobre el escrito se aplica un estilo */
+    opacity: .5; /* hace opaco al pasar el mouse */
+    /* Hace que las opciones cambien de tamaño si se les pasa el mouse: width: 2em;  */
+
+}
+nav{
+    display: flex; /*Acomoda de un lado a otro*/
+    justify-content: center;
+    justify-content: space-between; /**/
+    /* justify-content: space-around */
+    align-items: center;
+}
+.menu{
+    display: flex;
+    height: 10px; /* hace mas chico o grande */
+    margin-right: 100px;
+    align-items: center;
+}
+/* Termina Nav */
+/* Establecemos el 100% de alto y ancho de la pantalla */
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/pexels-photo-1939485.jpeg); /* Para poner una imagen */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
