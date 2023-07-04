@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 /* Estilos de Nav */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    /* matamos margenes y espaios dados por el navegador */
+    margin: 1;
+    padding: 0;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+}
 nav p{ /*Se le da un selector*/
     font-family: 'Pirata One', cursive;
     font-size: 4em;
@@ -20,6 +29,8 @@ li{
     text-align: center;
     border: solid 3px #000000  ; /* le da un bordea las list tipo, grosor, color*/
     border-radius: 30px; /* Le quita las puntas al borde */ /*#ff8830 color naranja*/
+    font-size: 1.5em;
+
 }
 li:hover{ /* Hover es para cuando se pasa el mouse sobre el escrito se aplica un estilo */
     opacity: .5; /* hace opaco al pasar el mouse */
@@ -49,3 +60,39 @@ header{
     background-size: cover;
     background-position: center;
 }
+.caja{
+    /*background-color: aqua;*/ 
+    display: flex;
+    height: 50vh;
+}
+.cajita{
+    height: 50vh;
+    width: 50%;
+    /*background-color: yellowgreen;*/ 
+    display: flex;
+    justify-content: center; /* alineado al centro */
+    align-items: center; /* alineado columna */
+    flex-direction: column; /* como lo acomoda en columna */
+}
+img{
+    width: 30%;
+    border-radius: 50px;
+}
+h1{
+    width: 50%;
+    font-size: 4em;
+}
+span{
+    color: #ff8830;
+}
+p{
+    width: 50%;
+    font-size: 2em;
+}
+/* ¡¡diseño responsivo!!...450px es para celulares */
+@media(max-width:900px){
+    header{
+        background: #bcbdac;
+    }
+}
+
