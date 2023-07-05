@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 *{
     /* matamos margenes y espaios dados por el navegador */
-    margin: 1;
+    margin: 0;
     padding: 0;
 }
 body{
@@ -54,7 +54,7 @@ nav{
 /* Establecemos el 100% de alto y ancho de la pantalla */
 header{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background: url(../img/pexels-photo-1939485.jpeg); /* Para poner una imagen */
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,10 +89,60 @@ p{
     width: 50%;
     font-size: 2em;
 }
-/* ¡¡diseño responsivo!!...450px es para celulares */
-@media(max-width:900px){
-    header{
-        background: #bcbdac;
-    }
+nav img{
+    display: none;
+}
+/* Se inicia el diseño de Navegador */
+.contenedor{
+    width: 90%;
+    margin: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    height: 25vh;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 50px;
+}
+.texto h2{
+    color: #ff8830;
+    font-size: 50px;
+}
+.texto p{
+    color: #000000;
+    font-size: 45px;
 }
 
+
+
+
+
+/* ¡¡diseño responsivo!!...450px es para celulares */
+@media(max-width:450px){
+    .menu{
+        display: none; /* Para dejar de visualizar los elementos de lista */
+    }
+    nav img{
+        display: block; /* El display Block es para que se muestre en la pag y el None es para ocultar */
+    }
+    header {
+        height: 100vp;
+    }
+    .caja{
+        height: 80vp;
+        flex-direction: column;
+    }
+    .cajita{
+        height: 40vp;
+        width: 100%;
+    }
+    h1{
+        width: 80%;
+    }
+    p{
+        width: 80%;
+    }
+}
